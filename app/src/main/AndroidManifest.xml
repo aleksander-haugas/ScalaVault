@@ -107,6 +107,13 @@
             android:launchMode="singleTask"
             android:screenOrientation="behind" />
 
+        <activity
+            android:name=".FaucetActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="The Forgotten Mines"
+            android:launchMode="singleTask"
+            android:screenOrientation="behind" />
+
         <service
             android:name=".service.WalletService"
             android:description="@string/service_description"

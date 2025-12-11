@@ -37,49 +37,51 @@
 		android:layout_gravity="center">
 
 			<LinearLayout
-				android:orientation="horizontal"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:layout_gravity="center">
+				android:layout_gravity="center"
+				android:orientation="horizontal">
 
 				<ImageView
 					android:layout_width="35dp"
 					android:layout_height="35dp"
 					android:layout_marginEnd="15dp"
+					android:contentDescription="TODO"
 					android:src="@drawable/ic_notification"
-					android:visibility="gone"/>
+					android:visibility="gone" />
 
 				<TextView
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:text="@string/mobileminer_scala_miner"
-					android:gravity="center"
 					android:layout_gravity="center"
+					android:gravity="center"
+					android:text="@string/the_forgotten_mines"
+					android:textColor="@color/txt_headline"
 					android:textSize="24sp"
-					android:textStyle="bold"
-					android:textColor="@color/txt_headline"/>
+					android:textStyle="bold" />
 
 			</LinearLayout>
 
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_gravity="center"
-			android:layout_marginTop="5dp"
-			android:text="@string/mobileminer_start_mining"
-			android:textColor="@color/txt_main"
-			android:textAlignment="center"
-			android:textSize="18sp" />
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginTop="5dp"
+				android:text="@string/the_forgotten_mines_description"
+				android:textAlignment="center"
+				android:textColor="@color/txt_main"
+				android:textSize="18sp" />
 
 	</LinearLayout>
 
 		<ImageView
 			android:layout_width="wrap_content"
 			android:layout_height="0dp"
-			android:layout_weight="1"
-			android:layout_marginTop="15dp"
 			android:layout_gravity="center"
-			android:src="@drawable/mobile_miner"/>
+			android:layout_marginTop="15dp"
+			android:layout_weight="1"
+			android:contentDescription="@string/the_forgotten_mines_description"
+			android:src="@drawable/the_forgotten_mines" />
 
 		<Button
 			android:id="@+id/btnFaucetPlay"
@@ -90,15 +92,15 @@
 			android:backgroundTint="@color/bg_blue"
 			android:insetLeft="2dp"
 			android:insetRight="2dp"
-			android:onClick="onDownloadMM"
-			android:text="@string/download"
-			android:textSize="14sp"
-			android:textColor="@color/txt_button_filled"
+			android:onClick="onFaucetPlay"
+			android:text="@string/play"
 			android:textAllCaps="false"
+			android:textColor="@color/txt_button_filled"
+			android:textSize="14sp"
 			app:cornerRadius="5dp"
+			app:icon="@android:drawable/ic_menu_more"
 			app:iconPadding="10dp"
-			app:iconTint="@color/btn_icon_default"
-			app:icon="@drawable/ic_download"/>
+			app:iconTint="@color/c_white" />
 
 	</LinearLayout>
 

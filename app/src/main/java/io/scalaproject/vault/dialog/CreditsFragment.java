@@ -21,9 +21,7 @@
 
 package io.scalaproject.vault.dialog;
 
-import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -35,15 +33,11 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
-import android.text.method.MovementMethod;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-
-import java.util.Objects;
 
 import io.scalaproject.vault.BuildConfig;
 import io.scalaproject.vault.R;
@@ -81,7 +75,7 @@ public class CreditsFragment extends DialogFragment {
         TextView tvappVersion = view.findViewById(R.id.appVersion);
         tvappVersion.setText(BuildConfig.VERSION_NAME);
 
-        Button btnDownloadMM = view.findViewById(R.id.btnDownloadMM);
+        Button btnDownloadMM = view.findViewById(R.id.btnFaucetPlay);
         btnDownloadMM.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

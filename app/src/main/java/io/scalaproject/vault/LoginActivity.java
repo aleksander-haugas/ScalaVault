@@ -1324,6 +1324,10 @@ public class LoginActivity extends BaseActivity
                 startActivity(new Intent(this, MobileMinerActivity.class));
                 yield true;
             }
+            case R.id.action_the_forgotten_mines -> {
+                startActivity(new Intent(this, FaucetActivity.class));
+                yield true;
+            }
             case R.id.action_debug -> {
                 toggleDebugInfo();
                 yield true;

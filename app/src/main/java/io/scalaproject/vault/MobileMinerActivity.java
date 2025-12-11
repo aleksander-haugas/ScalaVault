@@ -24,7 +24,11 @@ public class MobileMinerActivity extends BaseActivity {
     }
 
     public void onCloseVault(View view) {
-        super.onBackPressed();
+        view.animate()
+                .rotationBy(90f)
+                .setDuration(200)
+                .withEndAction(() -> super.onBackPressed())
+                .start();
     }
 
     public void onDownloadMM(View view) {

@@ -364,6 +364,10 @@ public class WalletActivity extends BaseActivity implements WalletFragment.Liste
                 startActivity(new Intent(this, MobileMinerActivity.class));
                 yield true;
             }
+            case R.id.action_the_forgotten_mines -> {
+                startActivity(new Intent(this, FaucetActivity.class));
+                yield true;
+            }
             case R.id.action_stealthmode -> {
                 if (isStealthMode()) { // disable stealthMode
                     item.setIcon(R.drawable.ic_stealth_mode_on);

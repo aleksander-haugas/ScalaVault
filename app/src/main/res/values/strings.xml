@@ -450,6 +450,7 @@
     <string name="privacy_policy_label">Privacy Policy</string>
     <string name="primary_address">Primary Address</string>
     <string name="mm_url" translatable="false">https://github.com/scala-network/MobileMiner/releases</string>
+    <string name="faucet_url" translatable="false">https://faucet.scala.network/</string>
     <string name="connection_remote_daemon">Connecting to remote node&#8230;</string>
     <string name="remote_nodes">Remote Nodes</string>
     <string name="address_book">Address Book</string>
@@ -461,7 +462,11 @@
     <string name="entry_name">Entry Name</string>
     <string name="start_mining">Start mining on your Android device safely and efficiently with the Scala Mobile Miner.</string>
     <string name="mobile_miner">Mobile Miner</string>
+    <string name="the_forgotten_mines">The Forgotten Mines</string>
+    <string name="faucet">Faucet</string>
+    <string name="the_forgotten_mines_description">Mine the depths and uncover hidden treasures your next gem could hold a legendary reward!</string>
     <string name="download">Download</string>
+    <string name="play">Play</string>
     <string name="select_image">Select Image</string>
     <string name="contact_avatar_hint">An image that represents this address book entry.</string>
     <string name="upload">Upload</string>

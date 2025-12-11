@@ -41,6 +41,13 @@
         app:showAsAction="never" />
 
     <item
+        android:id="@+id/action_the_forgotten_mines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orderInCategory="375"
+        android:title="@string/faucet"
+        app:showAsAction="never" />
+    <item
         android:id="@+id/action_credits"
         android:orderInCategory="400"
         android:title="@string/label_credits"
