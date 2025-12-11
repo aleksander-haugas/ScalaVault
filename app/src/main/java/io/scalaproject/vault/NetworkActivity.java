@@ -14,6 +14,8 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
+import timber.log.Timber;
+
 public class NetworkActivity extends BaseActivity {
 
     private static final int NETWORK_CHECK_TIMEOUT = 5; // segundos
@@ -32,14 +34,14 @@ public class NetworkActivity extends BaseActivity {
             String hideSetupWizard = Config.read(Config.CONFIG_KEY_HIDE_HOME_WIZARD);
             if (hideSetupWizard.isEmpty()) {
                 intent = new Intent(NetworkActivity.this, WizardHomeActivity.class);
-                Log.d("NetworkActivity", "Starting WizardHomeActivity");
+                Timber.tag("NetworkActivity").d("Starting WizardHomeActivity");
             } else {
                 intent = new Intent(NetworkActivity.this, LoginActivity.class);
-                Log.d("NetworkActivity", "Starting LoginActivity");
+                Timber.tag("NetworkActivity").d("Starting LoginActivity");
             }
         } else {
             intent = new Intent(NetworkActivity.this, LoginActivity.class);
-            Log.d("NetworkActivity", "Starting LoginActivity due to no connection");
+            Timber.tag("NetworkActivity").d("Starting LoginActivity due to no connection");
         }
 
         // Pass the connection state
@@ -63,7 +65,7 @@ public class NetworkActivity extends BaseActivity {
         try {
             return future.get(NETWORK_CHECK_TIMEOUT, TimeUnit.SECONDS);
         } catch (InterruptedException | ExecutionException | TimeoutException e) {
-            Log.d("NetworkActivity", "Network check timeout or error: " + e.getMessage());
+            Timber.tag("NetworkActivity").d("Network check timeout or error: %s", e.getMessage());
             return false;
         } finally {
             executor.shutdown();
